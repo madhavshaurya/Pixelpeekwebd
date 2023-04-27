@@ -1,0 +1,2 @@
+Flask : pip install flask
+subprocess : It comes preinstalled in the standard library package of python hence there is no need to install seperately.
