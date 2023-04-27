@@ -23,6 +23,31 @@
 </head>
 
 <body>
+    <script>
+        function startScript1() {
+          fetch('/script1')
+            .then(response => response.text())
+            .then(data => console.log(data));
+        }
+  
+        function startScript2() {
+          fetch('/script2')
+            .then(response => response.text())
+            .then(data => console.log(data));
+        }
+  
+        function startScript3() {
+          fetch('/script3')
+            .then(response => response.text())
+            .then(data => console.log(data));
+        }
+  
+        function startScript4() {
+          fetch('/script4')
+            .then(response => response.text())
+            .then(data => console.log(data));
+        }
+      </script>
     <header id="header" class="fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="logo"><a href="index.html">PIXELPEEK</a></h1>
@@ -62,7 +87,7 @@
                 <div class="col-lg-6 col-xl-5 d-flex flex-column justify-content-center order-2 order-lg-1 pt-3 pt-lg-0">
                     <h1>"See your world in a Pixel Peek"</h1>
                     <h2>Click on "Get Started" to try our latest prototype.</h2>
-                    <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
+                    <div><button onclick="startScript1()">Script1</button></div>
                 </div>
                 <div class="col-lg-6 col-xl-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150"><img class="img-fluid bounce animated" src="assets/img/hero-img.png" alt=""></div>
             </div>
@@ -176,20 +201,21 @@
                 <div class="row">
                     <div class="col-lg-6 d-flex flex-column order-2 align-items-lg-center order-lg-1">
                         <div data-aos="fade-up" data-aos-delay="100" class="icon-box mt-5 mt-lg-0"><i class="bx bx-receipt"></i>
-                            <h4>Video Processing</h4>
-                            <p>The system uses the OpenCV and Dlib libraries to process the video feed from the webcam. It divides the video feed into four quadrants and uses a combination of face detection and object tracking to accurately detect the number of people in each quadrant and calculate the total occupancy level.</p>
+                            <h4>User Interface</h4>
+                            <p>The system includes a user-friendly interface that displays the current occupancy level, temperature, and lighting settings. It also displays the bad posture detection parameters and alerts occupants if they need to adjust their posture.</p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="200" class="icon-box mt-5"><i class="bx bx-cube-alt"></i>
-                            <h4>Bad Posture Detection</h4>
-                            <p>The system uses the yawning, nodding, and head tilt parameters to detect bad posture in occupants. It uses machine learning algorithms from the Scikit-learn library to train a model on data collected from the sensors and webcam.</p>
+                            <h4>Video Processing</h4>
+                            <p>The system uses the OpenCV and Dlib libraries to process the video feed from the webcam. It divides the video feed into four quadrants and uses a combination of face detection and object tracking to accurately detect the number of people in each quadrant and calculate the total occupancy level.</p>
+
                         </div>
                         <div data-aos="fade-up" data-aos-delay="300" class="icon-box mt-5"><i class="bx bx-images"></i>
                             <h4>Temperature and Light Control</h4>
                             <p>The system uses a DHT11 sensor to detect the temperature in the room and adjust it as needed to create a comfortable working environment. It also uses four LEDs controlled by GPIO pins to adjust the lighting in the room based on occupancy level and natural light levels.</p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="400" class="icon-box mt-5"><i class="bx bx-shield"></i>
-                            <h4>User Interface</h4>
-                            <p>The system includes a user-friendly interface that displays the current occupancy level, temperature, and lighting settings. It also displays the bad posture detection parameters and alerts occupants if they need to adjust their posture.</p>
+                            <h4>Bad Posture Detection</h4>
+                            <p>The system uses the yawning, nodding, and head tilt parameters to detect bad posture in occupants. It uses machine learning algorithms from the Scikit-learn library to train a model on data collected from the sensors and webcam.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 image" data-aos="zoom-in" data-aos-delay="100"><img class="img-fluid" src="assets/img/features.svg" alt=""></div>
@@ -248,7 +274,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Portfolio</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>The Portfolio section showcases the various images of the prototype for the occupancy counter with bad posture detection, light and temperature control system. The images provide a detailed look at the physical design of the system, including the webcam and sensors used for occupancy and temperature detection, as well as the LEDs used for lighting control. The images also highlight the user interface, which displays occupancy level, temperature, lighting settings, and bad posture detection parameters. The portfolio serves as a visual guide to the system's functionality and design, providing users with a better understanding of how the system works and how it can benefit their workspace or environment.</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center">
@@ -262,84 +288,84 @@
                 </div>
                 <div class="row portfolio-container">
                     <div class="col-md-6 col-lg-4 portfolio-item filter-app">
-                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                        <div class="portfolio-wrap"><img class="img-fluid" src="C:/Users/USER/Downloads/Image1.jpeg" alt="">
                             <div class="portfolio-info">
                                 <h4>App 1</h4>
                                 <p>App</p>
                             </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                            <div class="portfolio-links"><a href="C:/Users/USER/Downloads/Image1" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 portfolio-item filter-web">
-                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                        <div class="portfolio-wrap"><img class="img-fluid" src="C:/Users/USER/Downloads/Image2.jpeg" alt="">
                             <div class="portfolio-info">
                                 <h4>Web 3</h4>
                                 <p>Web</p>
                             </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                            <div class="portfolio-links"><a href="C:/Users/USER/Downloads/Image2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 portfolio-item filter-app">
-                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                        <div class="portfolio-wrap"><img class="img-fluid" src="C:/Users/USER/Downloads/Image3.jpeg" alt="">
                             <div class="portfolio-info">
                                 <h4>App 2</h4>
                                 <p>App</p>
                             </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                            <div class="portfolio-links"><a href="C:/Users/USER/Downloads/Image3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item filter-card">
+                        <div class="portfolio-wrap"><img class="img-fluid" src="C:/Users/USER/Downloads/Image4.jpeg" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 2</h4>
+                                <p>Card</p>
+                            </div>
+                            <div class="portfolio-links"><a href="C:/Users/USER/Downloads/Image4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item filter-web">
+                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 2</h4>
+                                <p>Web</p>
+                            </div>
+                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item filter-app">
+                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 3</h4>
+                                <p>App</p>
+                            </div>
+                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item filter-card">
+                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 1</h4>
+                                <p>Card</p>
+                            </div>
+                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 portfolio-item filter-card">
                         <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-4.jpg" alt="">
                             <div class="portfolio-info">
-                                <h4>Card 2</h4>
+                                <h4>Card 3</h4>
                                 <p>Card</p>
                             </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 portfolio-item filter-web">
                         <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-5.jpg" alt="">
                             <div class="portfolio-info">
-                                <h4>Web 2</h4>
-                                <p>Web</p>
-                            </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 portfolio-item filter-app">
-                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-6.jpg" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>App</p>
-                            </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 portfolio-item filter-card">
-                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-7.jpg" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 1</h4>
-                                <p>Card</p>
-                            </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 portfolio-item filter-card">
-                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-8.jpg" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 3</h4>
-                                <p>Card</p>
-                            </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 portfolio-item filter-web">
-                        <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/portfolio-9.jpg" alt="">
-                            <div class="portfolio-info">
                                 <h4>Web 3</h4>
                                 <p>Web</p>
                             </div>
-                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
+                            <div class="portfolio-links"><a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a><a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -349,7 +375,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Try now!</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>The Try Now section allows users to experience the functionality of the occupancy counter with bad posture detection, light and temperature control system firsthand. By clicking on the "Get Started" button, users can open the program for the corresponding section, such as occupancy detection or bad posture detection. This allows users to interact with the system and see how it works in real-time. The Try Now section may also provide instructions on how to use the program and how to navigate the user interface. This section is an opportunity for users to test out the system and determine if it is the right solution for their workspace or environment.</p>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
@@ -363,7 +389,7 @@
                                 <li class="na">Pharetra massa</li>
                                 <li class="na">Massa ultricies mi</li>
                             </ul>
-                            <div class="btn-wrap"><a href="#" class="btn-buy">Try Now</a></div>
+                            <div class="btn-wrap"><button onclick="startScript1()">Script 1</button></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
@@ -377,7 +403,7 @@
                                 <li>Pharetra massa</li>
                                 <li class="na">Massa ultricies mi</li>
                             </ul>
-                            <div class="btn-wrap"><a href="#" class="btn-buy">Try Now</a></div>
+                            <div class="btn-wrap"><button onclick="startScript2()">Script 2</button></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
@@ -391,7 +417,7 @@
                                 <li>Pharetra massa</li>
                                 <li>Massa ultricies mi</li>
                             </ul>
-                            <div class="btn-wrap"><a href="#" class="btn-buy">Try Now</a></div>
+                            <div class="btn-wrap"><button onclick="startScript3()">Script 3</button></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
@@ -405,7 +431,7 @@
                                 <li>Pharetra massa</li>
                                 <li>Massa ultricies mi</li>
                             </ul>
-                            <div class="btn-wrap"><a href="#" class="btn-buy">Try Now</a></div>
+                            <div class="btn-wrap"><button onclick="startScript4()">Script 4</button></div>
                         </div>
                     </div>
                 </div>
